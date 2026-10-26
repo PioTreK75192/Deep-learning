@@ -1,0 +1,73 @@
+{
+  "config": {
+    "seed": 42,
+    "epochs": 40,
+    "batch_size": 128,
+    "num_workers": 0,
+    "learning_rate": 0.05,
+    "min_learning_rate": 0.0005,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "channels": [
+      32,
+      64,
+      128
+    ],
+    "blocks_per_stage": [
+      3,
+      3,
+      3
+    ],
+    "gate_bias": -1.0,
+    "val_per_class": 500,
+    "horizontal_flip": true,
+    "use_amp": true,
+    "data_dir": "data",
+    "output_dir": "outputs/highway_cifar10",
+    "resume": false
+  },
+  "environment": {
+    "python": "3.11.8",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "2.4.4",
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 4070 SUPER"
+  },
+  "normalization": {
+    "mean": [
+      0.49183993285334954,
+      0.48254119119349126,
+      0.4468195834184368
+    ],
+    "std": [
+      0.24705073072319034,
+      0.24354212224302518,
+      0.2616922130832283
+    ]
+  },
+  "classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "parameters": 1257098,
+  "epochs_completed": 40,
+  "best_epoch": 40,
+  "best_val_accuracy": 0.898,
+  "train_samples": 45000,
+  "validation_samples": 5000,
+  "test_samples": 10000,
+  "test_loss": 0.45494340467453004,
+  "test_accuracy": 0.8849,
+  "test_error_rate": 0.11509999999999998,
+  "macro_f1": 0.88421231508255,
+  "training_seconds": 450.7636533999903
+}
