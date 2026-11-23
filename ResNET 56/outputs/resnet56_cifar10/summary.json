@@ -1,0 +1,47 @@
+{
+  "config": {
+    "seed": 42,
+    "batch_size": 128,
+    "learning_rate": 0.1,
+    "lr_milestones": [
+      32000,
+      48000
+    ],
+    "total_steps": 64000,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "use_bfloat16": true,
+    "val_per_class": 500,
+    "cutout_size": 16,
+    "report_every": 1000
+  },
+  "environment": {
+    "python": "3.11.8",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+    "gpu_memory_gib": 11.99,
+    "precision": "AMP BF16"
+  },
+  "parameters": 853018,
+  "train_samples": 45000,
+  "validation_samples": 5000,
+  "test_samples": 10000,
+  "completed_steps": 64000,
+  "best_step": 63000,
+  "best_val_accuracy": 0.9508,
+  "final_val_accuracy": 0.9482,
+  "training_seconds": 744.1905105999904,
+  "peak_torch_allocated_gib": 0.7578158378601074,
+  "peak_torch_reserved_gib": 0.900390625,
+  "test_correct": 9380,
+  "test_accuracy": 0.938,
+  "test_error_rate": 0.062000000000000055,
+  "test_loss": 0.23062457885742188,
+  "macro_f1": 0.9380016326904297,
+  "paper_accuracy": 0.9303,
+  "baseline_accuracy": 0.9263,
+  "difference_to_baseline_pp": 1.1699999999999933,
+  "accuracy_difference_pp": 0.7699999999999929
+}
